@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T&amp;G Software</title>
+<meta name="description" content="T&amp;G Software — Toth Gonçalves Software Development Ltda. Desenvolvimento de aplicativos. Criadora do Pílulas de Tarô.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+:root{
+  --bg:#F5F6F8; --surface:#FFFFFF; --ink:#16181D; --muted:#5B6270; --line:#E1E4EA;
+  --accent:#1F4FD1; --accent-soft:#E8EEFC;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --bg:#101217; --surface:#171A21; --ink:#E9ECF2; --muted:#9AA2B1; --line:#2A2F3A;
+    --accent:#8FB0FF; --accent-soft:#1D2740;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:56px 20px 64px}
+.mark{display:inline-flex;align-items:center;gap:12px;margin-bottom:40px}
+.mark span{width:40px;height:40px;border-radius:10px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:600;letter-spacing:-.02em}
+.mark b{font-size:1.05rem;font-weight:600}
+h1{font-size:2.2rem;line-height:1.2;margin:0 0 12px;font-weight:600;letter-spacing:-.02em;text-wrap:balance}
+.lead{color:var(--muted);font-size:1.1rem;max-width:58ch;margin:0}
+section{margin-top:48px}
+h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600;margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px}
+.card h3{margin:0 0 6px;font-size:1.2rem;font-weight:600}
+.card p{margin:0;color:var(--muted)}
+.card .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:.95rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.pill{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin-left:8px;vertical-align:middle}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 24px;margin:0}
+dt{color:var(--muted)}
+dd{margin:0}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.92em}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+@media (max-width:520px){h1{font-size:1.75rem}dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:10px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="mark"><span>T&amp;G</span><b>T&amp;G Software</b></div>
+
+  <h1>Aplicativos feitos com cuidado, do Brasil.</h1>
+  <p class="lead">A T&amp;G Software desenvolve e publica aplicativos para Android. Tratamos poucos produtos por vez e cuidamos de cada um: dados mínimos, preço dito antes da compra e nenhuma promessa que o app não cumpre.</p>
+
+  <section>
+    <h2>Aplicativos</h2>
+    <div class="card">
+      <h3>Pílulas de Tarô <span class="pill">Em breve na Google Play</span></h3>
+      <p>Carta do Dia, leituras de tarô com interpretação por inteligência artificial e uma biblioteca com as 78 cartas. Em português.</p>
+      <div class="links">
+        <a href="https://rictoth.github.io/lumina-tarot-legal/privacidade.html">Política de Privacidade</a>
+        <a href="https://rictoth.github.io/lumina-tarot-legal/termos.html">Termos de Uso</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>A empresa</h2>
+    <div class="card">
+      <dl>
+        <dt>Razão social</dt><dd>Toth Gonçalves Software Development Ltda</dd>
+        <dt>Nome fantasia</dt><dd>T&amp;G Software</dd>
+        <dt>CNPJ</dt><dd class="mono">54.323.625/0001-13</dd>
+        <dt>Sede</dt><dd>São Paulo – SP, Brasil</dd>
+        <dt>Contato</dt><dd><a href="mailto:tothgoncalvessd@gmail.com">tothgoncalvessd@gmail.com</a></dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>© 2026 Toth Gonçalves Software Development Ltda · CNPJ 54.323.625/0001-13</footer>
+</main>
+</body>
+</html>
