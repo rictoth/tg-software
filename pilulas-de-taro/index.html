@@ -3,146 +3,251 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pílulas de Tarô: Carta do Dia e leituras de tarô sobre a sua pergunta</title>
-<meta name="description" content="Tire a sua Carta do Dia, grátis, e faça leituras de tarô sobre a sua pergunta. Se você repetir a pergunta, a resposta é a mesma.">
+<title>Pílulas de Tarô: Carta do Dia grátis e leituras de tarô sobre a sua pergunta</title>
+<meta name="description" content="Tire a sua Carta do Dia, grátis, e faça leituras de tarô sobre a sua pergunta. Se você repetir a pergunta, a resposta é a mesma. Baixe no Google Play.">
+<meta name="theme-color" content="#0A0910">
 <link rel="canonical" href="https://tgsd.com.br/pilulas-de-taro/">
-<meta property="og:title" content="Pílulas de Tarô: Carta do Dia e leituras de tarô sobre a sua pergunta">
-<meta property="og:description" content="Tire a sua Carta do Dia, grátis, e faça leituras de tarô sobre a sua pergunta. Se você repetir a pergunta, a resposta é a mesma.">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<meta property="og:title" content="Pílulas de Tarô: Carta do Dia grátis e leituras de tarô sobre a sua pergunta">
+<meta property="og:description" content="Tire a sua Carta do Dia, grátis, e faça leituras de tarô sobre a sua pergunta. Se você repetir a pergunta, a resposta é a mesma. Baixe no Google Play.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tgsd.com.br/pilulas-de-taro/">
 <meta property="og:image" content="https://tgsd.com.br/pilulas-de-taro/img/04_carta_do_dia.webp">
+<meta property="og:locale" content="pt_BR">
 <!-- Gerado por scripts/gerar-paginas-cartas.py, no repositório do app. Não edite à mão. -->
-<style>
-  :root { --fundo:#faf7f2; --texto:#2b2433; --suave:#6b6175; --destaque:#6d3fa0;
-          --cartao:#ffffff; --borda:#e6dfd3; --convite:#f1e9fb; }
-  @media (prefers-color-scheme: dark) {
-    :root { --fundo:#17131c; --texto:#ece6f2; --suave:#a99fb5; --destaque:#c4a3ef;
-            --cartao:#211b29; --borda:#362d41; --convite:#2a2036; } }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--fundo); color:var(--texto);
-         font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:680px; margin:0 auto; padding:24px 16px 48px; }
-  a { color:var(--destaque); }
-  .trilha { font-size:14px; color:var(--suave); }
-  .trilha a { text-decoration:none; }
-  h1 { font-size:1.6rem; line-height:1.3; margin:.4em 0; }
-  h2 { font-size:1.15rem; margin-top:1.8em; }
-  .topo { display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap; }
-  .topo img { width:160px; max-width:40vw; height:auto; border-radius:10px;
-              border:1px solid var(--borda); }
-  .topo dl { margin:0; flex:1; min-width:180px; }
-  .topo dt { color:var(--suave); font-size:14px; }
-  .topo dd { margin:0 0 8px; }
-  .chips { display:flex; gap:6px; flex-wrap:wrap; padding:0; margin:4px 0 0; list-style:none; }
-  .chips li { border:1px solid var(--borda); border-radius:999px; padding:2px 10px; font-size:14px; }
-  .convite { background:var(--convite); border-radius:14px; padding:16px 20px; margin:32px 0; }
-  .convite p { margin:.4em 0; }
-  .botao { display:inline-block; background:var(--destaque); color:var(--fundo); text-decoration:none;
-           border-radius:999px; padding:10px 20px; font-weight:600; margin-top:6px; }
-  .embreve { margin:.6em 0 0; }
-  .lede { font-size:1.1rem; }
-  .suave { color:var(--suave); font-size:15px; }
-  .capturas { display:flex; gap:12px; overflow-x:auto; padding:8px 0 4px; margin:20px 0 0;
-              scroll-snap-type:x mandatory; }
-  .capturas figure { margin:0; flex:0 0 auto; width:180px; scroll-snap-align:start; }
-  .capturas img { width:100%; height:auto; border-radius:14px; border:1px solid var(--borda); }
-  .capturas figcaption { font-size:14px; color:var(--suave); margin-top:4px; }
-  .tiragens { width:100%; border-collapse:collapse; }
-  .tiragens td { padding:10px 0; border-bottom:1px solid var(--borda); vertical-align:top; }
-  .tiragens td.n { text-align:right; white-space:nowrap; padding-left:12px; }
-  .grade.mini { grid-template-columns:repeat(auto-fill,minmax(88px,1fr)); gap:8px; }
-  .grade.mini a { padding:6px; font-size:13px; line-height:1.3; }
-  .links { display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:32px; font-size:15px; }
-  .vizinhas { display:flex; justify-content:space-between; gap:12px; font-size:15px; }
-  .grade { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:12px;
-           padding:0; list-style:none; }
-  .grade a { display:block; text-align:center; text-decoration:none; color:var(--texto);
-             border:1px solid var(--borda); border-radius:12px; padding:10px; background:var(--cartao); }
-  .grade img { width:100%; height:auto; border-radius:6px; }
-  footer { color:var(--suave); font-size:14px; margin-top:40px; }
-</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Pílulas de Tarô", "operatingSystem": "Android", "applicationCategory": "LifestyleApplication", "inLanguage": "pt-BR", "url": "https://tgsd.com.br/pilulas-de-taro/", "description": "Tire a sua Carta do Dia, grátis, e faça leituras de tarô sobre a sua pergunta. Se você repetir a pergunta, a resposta é a mesma.", "publisher": {"@type": "Organization", "name": "T&G Software", "url": "https://tgsd.com.br"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:ital,wght@1,600&family=Inter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="estilo.css?v=632f3d28ab">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Pílulas de Tarô", "operatingSystem": "Android", "applicationCategory": "LifestyleApplication", "inLanguage": "pt-BR", "url": "https://tgsd.com.br/pilulas-de-taro/", "description": "Tire a sua Carta do Dia, grátis, e faça leituras de tarô sobre a sua pergunta. Se você repetir a pergunta, a resposta é a mesma. Baixe no Google Play.", "installUrl": "https://play.google.com/store/apps/details?id=com.tgsoftware.auratarot&referrer=utm_source%3Dsite%26utm_medium%3Dapp_schema", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "publisher": {"@type": "Organization", "name": "T&G Software", "url": "https://tgsd.com.br"}}</script>
 </head>
-<body>
+<body><header class="topo">
+  <div class="envelope">
+    <a class="marca" href=""><img src="img/logo.webp" alt="" width="30" height="30">Pílulas de Tarô</a>
+    <nav aria-label="Principal">
+      <a class="link" href="#como-funciona">Como funciona</a>
+      <a class="link" href="cartas/">Significado das cartas</a>
+      <a class="link" href="#perguntas">Perguntas</a>
+      <a class="play compacto" href="https://play.google.com/store/apps/details?id=com.tgsoftware.auratarot&amp;referrer=utm_source%3Dsite%26utm_medium%3Dapp_topo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 19h14"/></svg><span><small>Baixar grátis no</small><strong>Google Play</strong></span></a>
+    </nav>
+  </div>
+</header>
 <main>
-<nav class="trilha"><a href="../">T&amp;G Software</a> › Pílulas de Tarô</nav>
-<h1>Pílulas de Tarô</h1>
-<p class="lede">Um minuto por dia com o tarô. A Carta do Dia é grátis, todos os dias, e quando houver uma
-pergunta de verdade, a leitura fala dela, carta por carta.</p>
-<p class="embreve"><strong>Em breve na Google Play.</strong> Enquanto isso, acompanhe em <a href="https://instagram.com/pilulasdetaro">instagram.com/pilulasdetaro</a>.</p>
+<section class="heroi">
+  <div class="envelope">
+    <div class="texto">
+      <p class="sobretitulo">Tarô no seu celular · Android</p>
+      <h1>Um minuto por dia com as cartas</h1>
+      <p class="poetico">Tire a sua Carta do Dia, grátis. Quando a pergunta for séria, a leitura fala
+      dela, carta por carta.</p>
+      <div data-observa-cta><a class="play" href="https://play.google.com/store/apps/details?id=com.tgsoftware.auratarot&amp;referrer=utm_source%3Dsite%26utm_medium%3Dapp_heroi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 19h14"/></svg><span><small>Baixar grátis no</small><strong>Google Play</strong></span></a></div>
+      <ul class="garantias"><li>Grátis para baixar</li><li>Carta do Dia grátis, todo dia</li><li>3 créditos de boas-vindas</li><li>Sem anúncios</li></ul>
+    </div>
+    <div class="vitrine">
+      <img src="img/04_carta_do_dia.webp" alt="A Carta do Dia, com o texto e o mantra do dia" width="540" height="960" fetchpriority="high">
+    </div>
+  </div>
+</section>
 
-<div class="capturas">
-  <figure><img src="img/04_carta_do_dia.webp" alt="A Carta do Dia" width="216" height="384" loading="lazy"></figure>
-  <figure><img src="img/02_interpretacao.webp" alt="A leitura de uma tiragem, carta por carta" width="216" height="384" loading="lazy"></figure>
-  <figure><img src="img/03_oraculo.webp" alt="A conversa com o Oráculo sobre a leitura" width="216" height="384" loading="lazy"></figure>
-  <figure><img src="img/08_biblioteca.webp" alt="A biblioteca das 78 cartas" width="216" height="384" loading="lazy"></figure>
-</div>
+<section class="secao" id="como-funciona">
+  <div class="envelope">
+    <div class="secao-cabeca">
+      <p class="sobretitulo">Como funciona</p>
+      <h2>Um ritual curto, feito com calma</h2>
+    </div>
+    <ol class="passos">
+      <li class="cartao"><h3>Escreva a sua pergunta</h3><p>Sobre amor, trabalho, uma decisão ou o seu
+      dia. O app sugere a tiragem que combina com ela.</p></li>
+      <li class="cartao"><h3>Embaralhe e escolha</h3><p>Você embaralha e tira as cartas do leque, uma a
+      uma, como numa mesa de verdade.</p></li>
+      <li class="cartao"><h3>Leia e converse</h3><p>A leitura interpreta cada carta à luz da sua
+      pergunta, e depois você pode continuar a conversa com o Oráculo.</p></li>
+    </ol>
+  </div>
+</section>
 
-<h2>A mesma pergunta, a mesma resposta</h2>
-<p>Se você repetir a pergunta nos 30 dias seguintes, mesmo com outras palavras, o app devolve as mesmas
-cartas e a mesma leitura, com a data da consulta anterior, e não gasta crédito. O tarô não muda de ideia
-porque você insistiu.</p>
+<section class="secao">
+  <div class="envelope regra">
+    <div>
+      <p class="sobretitulo">O que nos diferencia</p>
+      <h2>A mesma pergunta, a mesma resposta</h2>
+      <p>Se você repetir a pergunta nos 30 dias seguintes, mesmo com outras palavras, o app devolve as
+      mesmas cartas e a mesma leitura, e não gasta crédito.</p>
+      <p class="poetico">Um tarô que muda de resposta quando você insiste não está respondendo: está
+      concordando.</p>
+    </div>
+    <div>
+      <div class="conversa">
+        <p class="balao pessoa"><span class="quando">Segunda-feira</span>Devo aceitar a proposta de
+        emprego nova?</p>
+        <p class="balao app"><span class="quando">Três Cartas</span>O Oito de Copas, o Ás de Ouros e o
+        Sete de Ouros. Há algo que você já está pronta para deixar, e uma oportunidade concreta…</p>
+        <p class="balao pessoa"><span class="quando">Quarta-feira</span>Vale a pena trocar de emprego
+        agora?</p>
+        <p class="balao app destaque"><span class="quando">Mesma pergunta, feita na segunda</span>As
+        cartas são as mesmas: o Oito de Copas, o Ás de Ouros e o Sete de Ouros. A leitura também.</p>
+      </div>
+      <p class="exemplo">Exemplo ilustrativo</p>
+    </div>
+  </div>
+</section>
 
-<h2>As tiragens</h2>
-<table class="tiragens">
-  <tbody>
-    <tr><td><strong>Carta do Dia</strong><br><span class="suave">1 carta, todo dia</span></td><td class="n">grátis</td></tr>
-    <tr><td><strong>Sim ou Não</strong><br><span class="suave">1 carta</span></td><td class="n">1 crédito</td></tr>
-    <tr><td><strong>Três Cartas</strong><br><span class="suave">passado, presente e futuro</span></td><td class="n">3 créditos</td></tr>
-    <tr><td><strong>Amor</strong><br><span class="suave">3 cartas</span></td><td class="n">3 créditos</td></tr>
-    <tr><td><strong>Carreira e Dinheiro</strong><br><span class="suave">3 cartas</span></td><td class="n">3 créditos</td></tr>
-    <tr><td><strong>Cruz Celta</strong><br><span class="suave">a leitura completa, 10 cartas</span></td><td class="n">5 créditos</td></tr>
-  </tbody>
-</table>
-<p>A instalação traz 3 créditos de boas-vindas. O custo aparece antes de você escrever a
-pergunta, os créditos comprados não vencem e você pode definir um teto de gasto por mês. Depois da
-leitura, dá para continuar a conversa sobre ela com o Oráculo.</p>
+<section class="secao colada" aria-label="Telas do app">
+  <div class="envelope">
+    <div class="capturas">
+    <figure><img src="img/02_interpretacao.webp" alt="A leitura de uma tiragem, carta por carta" width="540" height="960" loading="eager"></figure>
+    <figure><img src="img/01_cruz_celta.webp" alt="A Cruz Celta, a leitura completa em 10 cartas" width="540" height="960" loading="lazy"></figure>
+    <figure><img src="img/03_oraculo.webp" alt="A conversa com o Oráculo sobre a leitura" width="540" height="960" loading="lazy"></figure>
+    <figure><img src="img/05_widget.webp" alt="A Carta do Dia no widget da tela inicial" width="540" height="960" loading="lazy"></figure>
+    <figure><img src="img/08_biblioteca.webp" alt="A biblioteca das 78 cartas" width="540" height="960" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
 
-<h2>Significado das cartas</h2>
-<p>O que cada uma das 78 cartas diz, direita e invertida, no amor, no trabalho e como conselho.
-<a href="cartas/">Ver todas as cartas</a>.</p>
-<ul class="grade mini">
-  <li><a href="cartas/o-louco/"><img src="cartas/img/m00_fool.webp" alt="" width="140" height="235" loading="lazy">O Louco</a></li>
-  <li><a href="cartas/o-mago/"><img src="cartas/img/m01_magician.webp" alt="" width="140" height="235" loading="lazy">O Mago</a></li>
-  <li><a href="cartas/a-sacerdotisa/"><img src="cartas/img/m02_priestess.webp" alt="" width="140" height="235" loading="lazy">A Sacerdotisa</a></li>
-  <li><a href="cartas/a-imperatriz/"><img src="cartas/img/m03_empress.webp" alt="" width="140" height="235" loading="lazy">A Imperatriz</a></li>
-  <li><a href="cartas/o-imperador/"><img src="cartas/img/m04_emperor.webp" alt="" width="140" height="235" loading="lazy">O Imperador</a></li>
-  <li><a href="cartas/o-hierofante/"><img src="cartas/img/m05_hierophant.webp" alt="" width="140" height="235" loading="lazy">O Hierofante</a></li>
-  <li><a href="cartas/os-amantes/"><img src="cartas/img/m06_lovers.webp" alt="" width="140" height="235" loading="lazy">Os Amantes</a></li>
-  <li><a href="cartas/o-carro/"><img src="cartas/img/m07_chariot.webp" alt="" width="140" height="235" loading="lazy">O Carro</a></li>
-  <li><a href="cartas/a-forca/"><img src="cartas/img/m08_strength.webp" alt="" width="140" height="235" loading="lazy">A Força</a></li>
-  <li><a href="cartas/o-eremita/"><img src="cartas/img/m09_hermit.webp" alt="" width="140" height="235" loading="lazy">O Eremita</a></li>
-  <li><a href="cartas/roda-da-fortuna/"><img src="cartas/img/m10_wheel.webp" alt="" width="140" height="235" loading="lazy">Roda da Fortuna</a></li>
-  <li><a href="cartas/a-justica/"><img src="cartas/img/m11_justice.webp" alt="" width="140" height="235" loading="lazy">A Justiça</a></li>
-  <li><a href="cartas/o-enforcado/"><img src="cartas/img/m12_hanged_man.webp" alt="" width="140" height="235" loading="lazy">O Enforcado</a></li>
-  <li><a href="cartas/a-morte/"><img src="cartas/img/m13_death.webp" alt="" width="140" height="235" loading="lazy">A Morte</a></li>
-  <li><a href="cartas/a-temperanca/"><img src="cartas/img/m14_temperance.webp" alt="" width="140" height="235" loading="lazy">A Temperança</a></li>
-  <li><a href="cartas/o-diabo/"><img src="cartas/img/m15_devil.webp" alt="" width="140" height="235" loading="lazy">O Diabo</a></li>
-  <li><a href="cartas/a-torre/"><img src="cartas/img/m16_tower.webp" alt="" width="140" height="235" loading="lazy">A Torre</a></li>
-  <li><a href="cartas/a-estrela/"><img src="cartas/img/m17_star.webp" alt="" width="140" height="235" loading="lazy">A Estrela</a></li>
-  <li><a href="cartas/a-lua/"><img src="cartas/img/m18_moon.webp" alt="" width="140" height="235" loading="lazy">A Lua</a></li>
-  <li><a href="cartas/o-sol/"><img src="cartas/img/m19_sun.webp" alt="" width="140" height="235" loading="lazy">O Sol</a></li>
-  <li><a href="cartas/o-julgamento/"><img src="cartas/img/m20_judgement.webp" alt="" width="140" height="235" loading="lazy">O Julgamento</a></li>
-  <li><a href="cartas/o-mundo/"><img src="cartas/img/m21_world.webp" alt="" width="140" height="235" loading="lazy">O Mundo</a></li>
-</ul>
+<section class="secao" id="tiragens">
+  <div class="envelope">
+    <div class="secao-cabeca">
+      <p class="sobretitulo">Tiragens e créditos</p>
+      <h2>Você sabe o custo antes de perguntar</h2>
+      <p class="suave">A Carta do Dia é grátis para sempre. As outras leituras usam créditos, e a
+      instalação já traz 3.</p>
+    </div>
+    <ul class="tiragens">
+    <li class="gratis"><span class="selo">Grátis todo dia</span><div class="cartao"><h3>Carta do Dia</h3><p>Uma carta para o seu dia, com um texto para refletir e um mantra para levar com você.</p><span class="preco">grátis · 1 carta, todo dia</span></div></li>
+    <li><div class="cartao"><h3>Sim ou Não</h3><p>Uma resposta direta para uma pergunta fechada.</p><span class="preco">1 crédito · 1 carta</span></div></li>
+    <li><div class="cartao"><h3>Três Cartas</h3><p>Passado, presente e futuro da situação que você descreveu.</p><span class="preco">3 créditos · 3 cartas</span></div></li>
+    <li><div class="cartao"><h3>Amor</h3><p>Um relacionamento, um encontro, um sentimento que não está claro.</p><span class="preco">3 créditos · 3 cartas</span></div></li>
+    <li><div class="cartao"><h3>Carreira e Dinheiro</h3><p>Uma decisão de trabalho, uma mudança, a vida financeira.</p><span class="preco">3 créditos · 3 cartas</span></div></li>
+    <li><div class="cartao"><h3>Cruz Celta</h3><p>A leitura mais completa: a situação inteira, do que a cerca ao desfecho provável.</p><span class="preco">5 créditos · 10 cartas</span></div></li>
+    </ul>
+    <ul class="compromissos">
+      <li><strong>Custo dito antes</strong>Aparece antes de você escrever a pergunta, nunca depois.</li>
+      <li><strong>Créditos sem validade</strong>Os que você compra não vencem.</li>
+      <li><strong>Teto de gasto</strong>Você define quanto pode gastar por mês, se quiser.</li>
+      <li><strong>Pergunta repetida não paga</strong>A regra dos 30 dias devolve a leitura sem cobrar.</li>
+    </ul>
+  </div>
+</section>
 
-<h2>Privacidade</h2>
-<p>O conteúdo das suas leituras fica no seu aparelho, e o nosso servidor não guarda a sua pergunta. Não
-há anúncios. Os detalhes estão na <a href="https://rictoth.github.io/lumina-tarot-legal/privacidade.html">Política de Privacidade</a>.</p>
+<section class="secao" id="tirar">
+  <div class="envelope estreito">
+    <div class="cartao sorteio" data-sorteio data-raiz="">
+      <div class="palco">
+        <button class="carta" type="button" aria-label="Tirar uma carta">
+          <span class="face verso"><img src="img/logo.webp" alt="" width="120" height="120"></span>
+          <span class="face frente"><img src="" alt=""></span>
+        </button>
+      </div>
+      <div>
+        <div class="convite-sorteio">
+          <p class="sobretitulo">Experimente agora</p>
+          <h2>Tire uma carta agora</h2>
+          <p class="suave">Respire, pense numa situação e toque na carta. Ela sai de um baralho completo,
+          com as 78 cartas.</p>
+        </div>
+        <div class="resultado" hidden aria-live="polite">
+          <p class="sobretitulo">A sua carta</p>
+          <h2 data-nome></h2>
+          <ul class="chips" data-chips></ul>
+          <p data-frase></p>
+          <p class="suave pequeno">No app, a leitura fala da sua pergunta, e não só da carta.</p>
+        </div>
+        <div class="acoes">
+          <button class="botao-linha" type="button" data-tirar>Tirar uma carta</button>
+          <a class="pequeno" data-link href="cartas/">Ler o significado completo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<nav class="links">
-  <a href="https://rictoth.github.io/lumina-tarot-legal/privacidade.html">Política de Privacidade</a>
-  <a href="https://rictoth.github.io/lumina-tarot-legal/termos.html">Termos de Uso</a>
-  <a href="excluir-conta/">Excluir conta</a>
-  <a href="https://instagram.com/pilulasdetaro">Instagram</a>
-  <a href="mailto:contato@tgsd.com.br">Contato</a>
-</nav>
-<footer>
-  <p>As leituras são um texto para refletir, não uma previsão. Não substituem orientação médica,
-  psicológica, jurídica ou financeira.</p>
-  <p>Imagens do baralho Rider-Waite (1909), em domínio público. © T&amp;G Software ·
-  <a href="mailto:contato@tgsd.com.br">contato@tgsd.com.br</a></p>
-</footer>
+<section class="secao">
+  <div class="envelope">
+    <div class="secao-cabeca">
+      <p class="sobretitulo">Biblioteca</p>
+      <h2>O significado das 78 cartas</h2>
+      <p class="suave">Direita e invertida, no amor, no trabalho e como conselho. Comece pelos Arcanos
+      Maiores, ou <a href="cartas/">veja todas as cartas</a>.</p>
+    </div>
+    <ul class="grade mini">
+    <li><a href="cartas/o-louco/"><img src="cartas/mini/m00_fool.webp" alt="" width="240" height="403" loading="lazy">O Louco</a></li>
+    <li><a href="cartas/o-mago/"><img src="cartas/mini/m01_magician.webp" alt="" width="240" height="403" loading="lazy">O Mago</a></li>
+    <li><a href="cartas/a-sacerdotisa/"><img src="cartas/mini/m02_priestess.webp" alt="" width="240" height="403" loading="lazy">A Sacerdotisa</a></li>
+    <li><a href="cartas/a-imperatriz/"><img src="cartas/mini/m03_empress.webp" alt="" width="240" height="403" loading="lazy">A Imperatriz</a></li>
+    <li><a href="cartas/o-imperador/"><img src="cartas/mini/m04_emperor.webp" alt="" width="240" height="403" loading="lazy">O Imperador</a></li>
+    <li><a href="cartas/o-hierofante/"><img src="cartas/mini/m05_hierophant.webp" alt="" width="240" height="403" loading="lazy">O Hierofante</a></li>
+    <li><a href="cartas/os-amantes/"><img src="cartas/mini/m06_lovers.webp" alt="" width="240" height="403" loading="lazy">Os Amantes</a></li>
+    <li><a href="cartas/o-carro/"><img src="cartas/mini/m07_chariot.webp" alt="" width="240" height="403" loading="lazy">O Carro</a></li>
+    <li><a href="cartas/a-forca/"><img src="cartas/mini/m08_strength.webp" alt="" width="240" height="403" loading="lazy">A Força</a></li>
+    <li><a href="cartas/o-eremita/"><img src="cartas/mini/m09_hermit.webp" alt="" width="240" height="403" loading="lazy">O Eremita</a></li>
+    <li><a href="cartas/roda-da-fortuna/"><img src="cartas/mini/m10_wheel.webp" alt="" width="240" height="403" loading="lazy">Roda da Fortuna</a></li>
+    <li><a href="cartas/a-justica/"><img src="cartas/mini/m11_justice.webp" alt="" width="240" height="403" loading="lazy">A Justiça</a></li>
+    <li><a href="cartas/o-enforcado/"><img src="cartas/mini/m12_hanged_man.webp" alt="" width="240" height="403" loading="lazy">O Enforcado</a></li>
+    <li><a href="cartas/a-morte/"><img src="cartas/mini/m13_death.webp" alt="" width="240" height="403" loading="lazy">A Morte</a></li>
+    <li><a href="cartas/a-temperanca/"><img src="cartas/mini/m14_temperance.webp" alt="" width="240" height="403" loading="lazy">A Temperança</a></li>
+    <li><a href="cartas/o-diabo/"><img src="cartas/mini/m15_devil.webp" alt="" width="240" height="403" loading="lazy">O Diabo</a></li>
+    <li><a href="cartas/a-torre/"><img src="cartas/mini/m16_tower.webp" alt="" width="240" height="403" loading="lazy">A Torre</a></li>
+    <li><a href="cartas/a-estrela/"><img src="cartas/mini/m17_star.webp" alt="" width="240" height="403" loading="lazy">A Estrela</a></li>
+    <li><a href="cartas/a-lua/"><img src="cartas/mini/m18_moon.webp" alt="" width="240" height="403" loading="lazy">A Lua</a></li>
+    <li><a href="cartas/o-sol/"><img src="cartas/mini/m19_sun.webp" alt="" width="240" height="403" loading="lazy">O Sol</a></li>
+    <li><a href="cartas/o-julgamento/"><img src="cartas/mini/m20_judgement.webp" alt="" width="240" height="403" loading="lazy">O Julgamento</a></li>
+    <li><a href="cartas/o-mundo/"><img src="cartas/mini/m21_world.webp" alt="" width="240" height="403" loading="lazy">O Mundo</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao" id="perguntas">
+  <div class="envelope estreito">
+    <div class="secao-cabeca">
+      <p class="sobretitulo">Perguntas frequentes</p>
+      <h2>Antes de baixar</h2>
+    </div>
+    <div class="faq">
+    <details><summary>O app é grátis?</summary><p>Baixar é grátis, e a Carta do Dia é grátis todos os dias. As outras leituras usam créditos: a instalação traz 3 e você ganha 1 por mês. Se quiser mais, há pacotes ou a assinatura, com o preço mostrado pela Google Play antes de qualquer compra.</p></details>
+    <details><summary>O que acontece se eu fizer a mesma pergunta de novo?</summary><p>Nos 30 dias seguintes, mesmo com outras palavras, o app devolve as mesmas cartas e a mesma leitura, com a data da consulta anterior, e não gasta crédito.</p></details>
+    <details><summary>A leitura é uma previsão?</summary><p>Não. É um texto para refletir sobre a sua situação a partir das cartas. Não substitui orientação médica, psicológica, jurídica ou financeira.</p></details>
+    <details><summary>O que vocês fazem com a minha pergunta?</summary><p>O conteúdo das suas leituras fica no seu aparelho, e o nosso servidor não guarda a sua pergunta. Não há anúncios. Os detalhes estão na Política de Privacidade.</p></details>
+    <details><summary>Os créditos vencem?</summary><p>Os créditos comprados não vencem. E você pode definir um teto de gasto por mês, se quiser.</p></details>
+    <details><summary>Funciona no iPhone?</summary><p>Por enquanto, o Pílulas de Tarô é só para Android, pelo Google Play.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="secao">
+  <div class="envelope">
+    <div class="faixa">
+      <img class="logo" src="img/logo.webp" alt="" width="64" height="64">
+      <h2>A sua carta de hoje está esperando</h2>
+      <p class="poetico">Um minuto, uma carta e uma pergunta para levar com você.</p>
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.tgsoftware.auratarot&amp;referrer=utm_source%3Dsite%26utm_medium%3Dapp_final"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 19h14"/></svg><span><small>Baixar grátis no</small><strong>Google Play</strong></span></a>
+      <ul class="garantias"><li>Grátis para baixar</li><li>Carta do Dia grátis, todo dia</li><li>3 créditos de boas-vindas</li><li>Sem anúncios</li></ul>
+    </div>
+  </div>
+</section>
 </main>
+<footer class="rodape">
+  <div class="envelope">
+    <div>
+      <p><strong>Pílulas de Tarô</strong> é um app da <a href="/">T&amp;G Software</a>, para Android, na Google Play.</p>
+      <p>As leituras são um texto para refletir, não uma previsão. Não substituem orientação médica,
+      psicológica, jurídica ou financeira.</p>
+      <p>Imagens do baralho Rider-Waite (1909), em domínio público.</p>
+    </div>
+    <nav aria-label="Rodapé">
+      <a href="">O app</a>
+      <a href="cartas/">Significado das cartas</a>
+      <a href="https://rictoth.github.io/lumina-tarot-legal/privacidade.html">Política de Privacidade</a>
+      <a href="https://rictoth.github.io/lumina-tarot-legal/termos.html">Termos de Uso</a>
+      <a href="excluir-conta/">Excluir conta</a>
+      <a href="https://instagram.com/pilulasdetaro">Instagram</a>
+      <a href="mailto:contato@tgsd.com.br">contato@tgsd.com.br</a>
+    </nav>
+  </div>
+</footer>
+<div class="barra-fixa" role="complementary" aria-label="Baixar o app">
+  <p><strong>Pílulas de Tarô</strong>Carta do Dia grátis, todo dia</p>
+  <a class="play compacto" href="https://play.google.com/store/apps/details?id=com.tgsoftware.auratarot&amp;referrer=utm_source%3Dsite%26utm_medium%3Dapp_barra"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 19h14"/></svg><span><small>Baixar grátis no</small><strong>Google Play</strong></span></a>
+</div>
+<script src="site.js?v=2de0bc492a" defer></script>
 </body>
 </html>

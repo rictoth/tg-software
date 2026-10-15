@@ -42,6 +42,14 @@ dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 24px;margin:0}
 dt{color:var(--muted)}
 dd{margin:0}
 .mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.92em}
+.card.app{display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:start}
+.app-icone{display:grid;place-items:center;width:56px;height:56px;border-radius:14px;background:#0A0910;border:1px solid var(--line)}
+.app-icone img{width:42px;height:42px}
+.acoes{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.botao{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:.95rem;padding:9px 16px;border-radius:9px}
+.botao:hover{text-decoration:none;filter:brightness(1.08)}
+.botao.secundario{background:var(--accent-soft);color:var(--accent)}
+@media (max-width:520px){.card.app{grid-template-columns:1fr}}
 footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
 @media (max-width:520px){h1{font-size:1.75rem}dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:10px}}
 </style>
@@ -55,15 +63,21 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:v
 
   <section>
     <h2>Aplicativos</h2>
-    <div class="card">
-      <h3><a href="/pilulas-de-taro/">Pílulas de Tarô</a> <span class="pill">Em breve na Google Play</span></h3>
-      <p>Carta do Dia, leituras de tarô com interpretação por inteligência artificial e uma biblioteca com as 78 cartas. Em português.</p>
+    <div class="card app">
+      <a class="app-icone" href="/pilulas-de-taro/" aria-hidden="true" tabindex="-1"><img src="/pilulas-de-taro/img/logo.webp" alt="" width="56" height="56"></a>
+      <div>
+      <h3><a href="/pilulas-de-taro/">Pílulas de Tarô</a> <span class="pill">Android · Google Play</span></h3>
+      <p>Carta do Dia grátis, leituras de tarô sobre a sua pergunta e uma biblioteca com as 78 cartas. Em português.</p>
+      <div class="acoes">
+        <a class="botao" href="https://play.google.com/store/apps/details?id=com.tgsoftware.auratarot&amp;referrer=utm_source%3Dsite%26utm_medium%3Dhome_tg">Baixar no Google Play</a>
+        <a class="botao secundario" href="/pilulas-de-taro/">Conhecer o app</a>
+      </div>
       <div class="links">
-        <a href="/pilulas-de-taro/">Conhecer o app</a>
         <a href="/pilulas-de-taro/cartas/">Significado das cartas</a>
         <a href="https://rictoth.github.io/lumina-tarot-legal/privacidade.html">Política de Privacidade</a>
         <a href="https://rictoth.github.io/lumina-tarot-legal/termos.html">Termos de Uso</a>
         <a href="/pilulas-de-taro/excluir-conta/">Excluir conta</a>
+      </div>
       </div>
     </div>
   </section>
