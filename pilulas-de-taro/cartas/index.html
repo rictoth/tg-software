@@ -34,6 +34,20 @@
   .convite p { margin:.4em 0; }
   .botao { display:inline-block; background:var(--destaque); color:var(--fundo); text-decoration:none;
            border-radius:999px; padding:10px 20px; font-weight:600; margin-top:6px; }
+  .embreve { margin:.6em 0 0; }
+  .lede { font-size:1.1rem; }
+  .suave { color:var(--suave); font-size:15px; }
+  .capturas { display:flex; gap:12px; overflow-x:auto; padding:8px 0 4px; margin:20px 0 0;
+              scroll-snap-type:x mandatory; }
+  .capturas figure { margin:0; flex:0 0 auto; width:180px; scroll-snap-align:start; }
+  .capturas img { width:100%; height:auto; border-radius:14px; border:1px solid var(--borda); }
+  .capturas figcaption { font-size:14px; color:var(--suave); margin-top:4px; }
+  .tiragens { width:100%; border-collapse:collapse; }
+  .tiragens td { padding:10px 0; border-bottom:1px solid var(--borda); vertical-align:top; }
+  .tiragens td.n { text-align:right; white-space:nowrap; padding-left:12px; }
+  .grade.mini { grid-template-columns:repeat(auto-fill,minmax(88px,1fr)); gap:8px; }
+  .grade.mini a { padding:6px; font-size:13px; line-height:1.3; }
+  .links { display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:32px; font-size:15px; }
   .vizinhas { display:flex; justify-content:space-between; gap:12px; font-size:15px; }
   .grade { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:12px;
            padding:0; list-style:none; }
@@ -45,6 +59,7 @@
 </head>
 <body>
 <main>
+<nav class="trilha"><a href="../">Pílulas de Tarô</a> › Significado das cartas</nav>
 <h1>Significado das cartas do tarô</h1>
 <p>O significado de cada carta do tarô: direita, invertida, no amor, no trabalho e como conselho. Escolha uma carta.</p>
 <ul class="grade">
@@ -132,7 +147,7 @@
   <p>No app Pílulas de Tarô, você escreve a sua pergunta, embaralha e escolhe as cartas, e a leitura fala
   dela, carta por carta. A Carta do Dia é grátis todo dia, e a instalação traz 3 créditos
   de boas-vindas. Se você repetir a pergunta nos 30 dias seguintes, a resposta é a mesma.</p>
-  <a class="botao" href="https://play.google.com/store/apps/details?id=com.tgsoftware.auratarot&amp;referrer=utm_source%3Dsite_cartas%26utm_medium%3Dindice">Baixar na Google Play</a>
+  <p class="embreve"><strong>Em breve na Google Play.</strong> Enquanto isso, acompanhe em <a href="https://instagram.com/pilulasdetaro">instagram.com/pilulasdetaro</a>.</p>
 </aside>
 <footer>
   <p>As leituras são um texto para refletir, não uma previsão. Não substituem orientação médica,
