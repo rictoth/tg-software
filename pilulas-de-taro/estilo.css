@@ -330,3 +330,15 @@ h3 { font-size: 1.12rem; margin: 0 0 .4em; }
 .barra-fixa p { margin: 0; font-size: 14px; line-height: 1.3; }
 .barra-fixa p strong { display: block; color: var(--ouro-claro); font-family: "Cinzel", Georgia, serif; }
 @media (min-width: 900px) { .barra-fixa { display: none; } }
+
+/* ── Tarô do ano: a calculadora da carta pessoal ─────────────────────── */
+.calculadora .campos { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; justify-content: center; }
+.calculadora label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--suave); }
+.calculadora select { font: inherit; font-size: 16px; color: var(--texto); background: var(--veludo);
+                      border: 1px solid var(--borda); border-radius: 12px; padding: 10px 12px; min-width: 120px; }
+.resultado-ano { display: grid; grid-template-columns: 140px 1fr; gap: 24px; align-items: center; margin-top: 28px; }
+.resultado-ano img { width: 140px; height: auto; border-radius: 10px; border: 1px solid var(--borda-forte); }
+.resultado-ano[hidden] { display: none; }
+@media (max-width: 560px) {
+  .resultado-ano { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+}

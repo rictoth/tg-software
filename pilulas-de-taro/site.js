@@ -5,7 +5,8 @@
  * Três coisas, e a página funciona sem nenhuma delas (sem JavaScript, os links continuam lá):
  * 1. a barra fixa do celular aparece depois que o botão da Play do topo sai da tela;
  * 2. "Tire uma carta": sorteia uma das 78 do baralho.json e vira a carta;
- * 3. o filtro do índice das cartas.
+ * 3. o filtro do índice das cartas;
+ * 4. a origem de quem chegou de fora (utm_source na URL) passa para o link da Play.
  */
 (function () {
   "use strict";
@@ -99,6 +100,22 @@
         g.hidden = !g.querySelector(".grade li:not([hidden])");
       });
       if (vazio) vazio.hidden = algum;
+    });
+  }
+
+  // 4. A origem de quem chegou de fora (?utm_source=pinterest) vai para o referrer da Play no lugar
+  // da do site. Sem isso, a instalação que veio de um pin aparece no painel como "site_cartas". A
+  // página de entrada guarda a origem na sessão, e as páginas seguintes a herdam; o utm_medium (a
+  // carta, o botão) continua o da página. Só letras minúsculas, números e "_", até 30.
+  var origem = null;
+  try {
+    var daUrl = new URLSearchParams(window.location.search).get("utm_source");
+    if (daUrl && /^[a-z0-9_]{1,30}$/.test(daUrl)) sessionStorage.setItem("origem", daUrl);
+    origem = sessionStorage.getItem("origem");
+  } catch (e) { /* sem sessionStorage, os links seguem com a origem do site */ }
+  if (origem) {
+    document.querySelectorAll('a[href*="play.google.com/store/apps/details"]').forEach(function (a) {
+      a.href = a.href.replace(/referrer=utm_source%3D[a-z0-9_]+/, "referrer=utm_source%3D" + origem);
     });
   }
 })();
